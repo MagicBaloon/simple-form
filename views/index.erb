@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h3>Send some data via form post method</h3>
+
+  <form action="/" method="POST">
+    <p>Name:</p>
+    <input type="text" name="username"><br>
+
+    <p>Phone:</p>
+    <input type="text" name="phone"><br>
+
+    <p>Select a topic:</p>
+    <select name="topic">
+      <option val="1">Some test option #1</option>
+      <option val="2">Some test option #2</option>
+      <option val="3">Some test option #3</option>
+    </select>
+    <br>
+
+    <p>Date:</p>
+    <input type="text" name="date"><br>
+
+    <p>Time:</p>
+    <input type="text" name="time"><br>
+
+    <button type="submit">Send data</button>
+  </form>
+</body>
+</html>
