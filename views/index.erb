@@ -6,14 +6,17 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h3>Send some data via form post method</h3>
+  <h3>Send some data via form using Sinatra</h3>
 
   <form action="/" method="POST">
     <p>Name:</p>
-    <input type="text" name="username"><br>
+    <input type="text" name="username" placeholder="Max"><br>
 
     <p>Phone:</p>
-    <input type="text" name="phone"><br>
+    <input type="text" name="phone" placeholder="+123456789"><br>
+
+    <p>Email:</p>
+    <input type="text" name="email" placeholder="test@test.com"><br>
 
     <p>Select a topic:</p>
     <select name="topic">
@@ -24,10 +27,13 @@
     <br>
 
     <p>Date:</p>
-    <input type="text" name="date"><br>
+    <input type="text" name="date" placeholder="12.03"><br>
 
     <p>Time:</p>
-    <input type="text" name="time"><br>
+    <input type="text" name="time" placeholder="14:30"><br><br>
+    
+    <p>Your message:</p>
+    <textarea name="message"></textarea><br><br>
 
     <button type="submit">Send data</button>
   </form>
